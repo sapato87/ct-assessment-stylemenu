@@ -5,6 +5,11 @@
     - Use the 'Lato' font family at 18px throughout the body of the document
     - cover the of the document background with the "map-bg.jpg" image in the images directory. 
 */
+body{
+    font-family: Lato;
+    background-image:url("../images/map-bg.jpg");
+    font-size: 18px;
+}
 
 
 nav {font-family: sans-serif;font-size: 10px;}
@@ -16,12 +21,23 @@ nav {font-family: sans-serif;font-size: 10px;}
         - set the font size to 45px 
         - set the font color to #5d4037
 */
+h1{
+    font-family: Supermercado one;
+    font-size: 45px;
+    color: #5d4037;
+}
 
 
 /* 
     Update the following ruleset (#menu) to accomplish the following:
         - Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. 
 */
+
+#menu {
+    column-rule: 2px dashed rosybrown;
+}
+
+
 #menu {
     columns: 400px 2;
     column-gap: 100px;
@@ -35,13 +51,21 @@ h2 {margin: 0;}
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-
+h2{
+    color: #6d4c41;
+    font-weight: bold;
+    font-variant: small-caps;
+}
 
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
         - Set the font size to 20px
         - Make the font bold
 */
+dt{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 dd {margin: 0 0 12px 0; display: flex;}
@@ -52,6 +76,10 @@ dd {margin: 0 0 12px 0; display: flex;}
         - Show the price of each item in a large font
         - set the font color to 'firebrick'
 */
+.price{ 
+font-size: large;
+color: firebrick;
+}
 .price {
     order: 2;
     padding-left: 10px;
@@ -63,3 +91,6 @@ address {padding: 10px;}
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
 */
+footer {
+    border: 2px dashed rosybrown;
+}  
